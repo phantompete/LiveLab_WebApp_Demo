@@ -5,7 +5,7 @@
 # Licensed under the Universal Permissive License v1.0 as shown at https://oss.oracle.com/licenses/upl.
 
 # General Configuration
-WEBAPP_HOME=/home/opc #Root location of the deployment
+WEBAPP_HOME=/home/opc/LiveLab_WebApp_Demo #Root location of the deployment
 GO_API_ZIP="Livelab_WebApp.zip"
 GO_API_PORT=8585
 FRONTEND_PORT=8000
