@@ -35,5 +35,5 @@ unzip -o "PID_GTFS.zip" -d transport_data
 rm PID_GTFS.zip
 
 #Cleanup the folder
+find transport_data -maxdepth 1 -type f ! -name "stop_times.txt" ! -name "routes.txt" ! -name "stops.txt" -delete
 
-find . -maxdepth 2 -type f ! -name "stop_times.txt" ! -name "routes.txt" ! -name "stops.txt" -delete
