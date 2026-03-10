@@ -4,8 +4,15 @@ This is the demo WebApp for the OCI PostgreSQL &amp; OCI Cache Workshop
 ## Instructions 
 - Clone this repo and configue the variables in the *deploy_application_demo.sh* bash script. 
 - Make the script executable `chmod +x deploy_application_demo.sh`
+
+**PostgreSQL**
+- Initialize the PostgreSQL database with your user with "db_init.sql"
+- Execute this command `psql -h oci_postgres_host -U phantompete -d postgres -a -f "db_init.sql"`
+- This will create all the tables required for the application, follow steps in the workshop to copy the data
+
+**Application**
 - Execute the script `./deploy_application_demo.sh`
-- This will install all the required dependencies then deploy the application backend and frontend services.
+- This will install all the required dependencies then deploy the application backend and frontend services
 
 **Required Parameters**
 - PRIMARY_REGION - "eu-frankfurt-1" Where your resources are located
@@ -15,3 +22,4 @@ This is the demo WebApp for the OCI PostgreSQL &amp; OCI Cache Workshop
 - PG_USER - "phantompete" - The name of your postgres user
 - PG_DB - "postgres" - Name of the database in this case we're using default
 - TRANSPORT_API_KEY - "xxx" - The API Key obtained during the workshop
+
