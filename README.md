@@ -7,7 +7,7 @@ This is the demo WebApp for the OCI PostgreSQL &amp; OCI Cache Workshop
 - Make the dataset script executable `chmod +x refresh_dataset.sh`
 
 **PostgreSQL**
-- Execute the script `./refresh_dataset.sh` this will get the latest route information, which you will later persist in the database.
+- Execute the script `./refresh_dataset.sh` this will get the latest route information, which you will later persist in the database. (It also checks for psql)
 - Initialize the PostgreSQL database with your user with "db_init.sql"
 - Execute this command `psql -h oci_postgres_host -U phantompete -d postgres -a -f "db_init.sql"`
 - This will create all the tables required for the application, follow steps in the workshop to copy the data
@@ -25,3 +25,4 @@ This is the demo WebApp for the OCI PostgreSQL &amp; OCI Cache Workshop
 - PG_DB - "postgres" - Name of the database in this case we're using default
 - TRANSPORT_API_KEY - "xxx" - The API Key obtained during the workshop
 
+*Note* If you don't have the psql client you can install it with this command `sudo yum -y install postgresql`
