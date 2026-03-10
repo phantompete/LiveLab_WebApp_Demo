@@ -9,6 +9,14 @@ command_exists() {
   command -v "$1" >/dev/null 2>&1
 }
 
+# Install Postgres if not present (psql)
+if command_exists psql; then
+  echo "psql client is installed."
+else
+  echo "Installing psql"
+  sudo yum install -y postgresql
+fi
+
 # Install Unzip if not present
 if command_exists unzip; then
   echo "Unazip is already installed."
@@ -27,4 +35,5 @@ unzip -o "PID_GTFS.zip" -d transport_data
 rm PID_GTFS.zip
 
 #Cleanup the folder
+
 find . -maxdepth 2 -type f ! -name "stop_times.txt" ! -name "routes.txt" ! -name "stops.txt" -delete
