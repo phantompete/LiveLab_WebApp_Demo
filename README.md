@@ -7,10 +7,12 @@ This is the demo WebApp for the OCI PostgreSQL &amp; OCI Cache Workshop
 - Make the dataset script executable `chmod +x refresh_dataset.sh`
 
 **PostgreSQL**
-- Execute the script `./refresh_dataset.sh` this will get the latest route information, which you will later persist in the database. (It also checks for psql)
+- Execute the script `./refresh_dataset.sh` this will get the latest route information*, which you will later persist in the database. (It also checks for psql)
 - Initialize the PostgreSQL database with your user with "db_init.sql"
 - Execute this command `psql -h oci_postgres_host -U phantompete -d postgres -a -f "db_init.sql"`
 - This will create all the tables required for the application, follow steps in the workshop to copy the data
+
+*This data comes from an external gtfs source https://pid.cz/en/opendata/#license, data is valid for 2 weeks before a refresh is necessary.
 
 **Application**
 - Execute the script `./deploy_application_demo.sh`
