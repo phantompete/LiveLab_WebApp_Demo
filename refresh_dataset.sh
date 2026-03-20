@@ -1,6 +1,7 @@
 #!/bin/bash
 
-# Created by Piotr Kurzynoga @ Oracle Czech Republic
+# Created by Piotr Kurzynoga @ Oracle Czech Republic.
+# Last Updated: March 2026
 # Copyright (c) 2026, Oracle and/or its affiliates.
 # Licensed under the Universal Permissive License v1.0 as shown at https://oss.oracle.com/licenses/upl.
 
@@ -36,4 +37,3 @@ rm PID_GTFS.zip
 
 #Cleanup the folder
 find transport_data -maxdepth 1 -type f ! -name "stop_times.txt" ! -name "routes.txt" ! -name "stops.txt" -delete
-
