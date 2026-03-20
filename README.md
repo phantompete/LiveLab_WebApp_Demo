@@ -2,6 +2,7 @@
 This is the demo WebApp for the OCI PostgreSQL &amp; OCI Cache Workshop
 
 ## Instructions 
+- The default configuration file assumes you are working in /home/opc, this is adjustable in the script, to clone the repo you will need to install git `sudo yum install git`, you can also download and transfer the files via SFTP. 
 - Clone this repo and configue the variables in the *deploy_application_demo.sh* bash script. 
 - Make the application script executable `chmod +x deploy_application_demo.sh`
 - Make the dataset script executable `chmod +x refresh_dataset.sh`
